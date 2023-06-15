@@ -21,6 +21,15 @@ a {
     color: inherit;
 }
 
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    padding: 25px;
+}
+
 .nav-section {
     z-index: 2;
     background-color: black;
@@ -31,7 +40,7 @@ a {
     align-items: center;
     height: auto;
     width: 100%;
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid #111;
 }
 
 
@@ -40,6 +49,8 @@ a {
     font-family: 'Space Grotesk', sans-serif;
     color: white;
 }
+
+
 
 .hero-overlay {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80');
@@ -80,11 +91,63 @@ a {
 }
 
 .main-container {
-    display: flex;
-    align-items: start;
     background-color: white;
     height: 100vh;
 }
+
+.main-body {
+    padding-top: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 25%;;
+}
+
+.main-body-text {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.sub-body {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-inline: 25%;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+}
+
+.sub-body-text {
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #333;
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+    .sub-body-text {
+        font-size: 15px;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 991px) {
+    .sub-body-text {
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .sub-body-text {
+        font-size: 12px;
+    }
+}
+
 
 .card-container {
     height: 25vh;
@@ -105,8 +168,37 @@ a {
 
 
 .footer {
-    display: flex;
     background-color: #111;
-    border-top: 1px solid #888;
     height: 25vh;
+}
+
+.footer-content {
+    height: 75%;
+    width: 100%;
+    background-color: black;
+    background-image: linear-gradient(to top, #111, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+.footer-end {
+    height: 25%;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-brand {
+    font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
 }
