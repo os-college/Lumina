@@ -17,6 +17,7 @@ i {
 }
 
 a {
+    z-index: 3;
     text-decoration: none;
     color: inherit;
 }
@@ -31,7 +32,7 @@ li {
 }
 
 .nav-section {
-    z-index: 2;
+    z-index: 10;
     background-color: black;
     padding-block: 10px;
     display: flex;
@@ -86,7 +87,6 @@ li {
 .content-header {
     font-size: 30px;
     font-family: 'Lato', sans-serif;
-    color: white;
     z-index: 1;
 }
 
@@ -148,6 +148,27 @@ li {
     }
 }
 
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid white;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background: linear-gradient(to bottom, transparent 50%, white 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    transition: background-position 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-position: bottom;
+    color: black;
+}
+
+  
+  
 
 .card-container {
     height: 25vh;

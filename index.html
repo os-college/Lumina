@@ -31,7 +31,11 @@
     <div class="hero-overlay"></div>
 
     <div class="content-container">
-        <h1 class="content-header">Connecting Humanity to the Cosmos.</h1>
+        <a href="#" onclick="scrollToPosition()">
+            <div class="btn">
+                <h1 class="content-header">Connecting Humanity to the Cosmos.</h1>
+            </div>
+        </a>
     </div>
 
     <div class="main-container">
@@ -72,5 +76,19 @@
             </a>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function scrollToPosition() {
+                // Specify the target position on the page where you want to scroll
+                const targetPosition = 500; // Change this value to your desired position
+            
+                // Scroll smoothly to the target position
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    </script>
 </body>
 </html>
