@@ -100,13 +100,17 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-inline: 25%;;
+    padding-inline: 25%;
 }
 
 .main-body-text {
     font-size: 30px;
     text-align: center;
     font-family: 'Lato', sans-serif;
+}
+
+.main-body-text::selection {
+    background-color: #eee;
 }
 
 .sub-body {
@@ -127,8 +131,16 @@ li {
     color: #333;
 }
 
+.sub-body-text::selection {
+    background-color: black;
+    color: white;
+}
+
 /* Desktop */
 @media screen and (min-width: 992px) {
+    .main-body-text {
+        font-size: 30px;
+    }
     .sub-body-text {
         font-size: 15px;
     }
@@ -136,6 +148,9 @@ li {
 
 /* Tablet */
 @media screen and (max-width: 991px) {
+    .main-body-text {
+        font-size: 25px;
+    }
     .sub-body-text {
         font-size: 14px;
     }
@@ -143,6 +158,9 @@ li {
 
 /* Mobile */
 @media screen and (max-width: 767px) {
+    .main-body-text {
+        font-size: 18px;
+    }
     .sub-body-text {
         font-size: 12px;
     }
