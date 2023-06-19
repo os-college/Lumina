@@ -255,3 +255,25 @@ li {
     font-family: 'Space Grotesk', sans-serif;
     color: white;
 }
+
+/* Tablet */
+@media screen and (max-width: 991px) {
+    .footer-links {
+        padding: 10px;
+        font-size: 18px;
+    }
+    .icon {
+        font-size: 30px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .footer-links {
+        padding: 3px;
+        font-size: 10px;
+    }
+    .icon {
+        font-size: 15px;
+    }
+}
